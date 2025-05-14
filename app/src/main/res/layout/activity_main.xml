@@ -1,30 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
     tools:context=".MainActivity">
 
+    <!-- 明るさセンサ -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/lightSensorText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        android:text="明るさセンサ: "
+        android:textSize="20sp"
+        android:textAlignment="center" />
 
-    <Button
-        android:id="@+id/button"
+    <!-- 地磁気センサ -->
+    <TextView
+        android:id="@+id/magneticSensorText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="終了"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="地磁気センサ: "
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- 位置センサ -->
+    <TextView
+        android:id="@+id/locationSensorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="位置センサ: "
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

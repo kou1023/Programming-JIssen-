@@ -41,11 +41,6 @@ public class MyView extends View {
                 break;
 
             case MotionEvent.ACTION_MOVE:
-                array_x.add(x);
-                array_y.add(y);
-                array_status.add(true);
-                invalidate();
-                break;
 
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_POINTER_UP:
